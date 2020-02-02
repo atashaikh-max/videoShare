@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Video</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+	<div class="main-header">
+	<button class="btn btn-light" onclick="openSideBar()"><i class="fa fa-bars"></i></button>
+	<div style="user-select: none;">
+		<h1 class="display-4" style="font-size: 30px;">VideoShare</h1>
+		<p style="font-size: 12px;">Best Video Sharing App 2020</p>
+	</div>
+	<button class="btn btn-light"><i class="fa fa-user-circle"></i></button>
+</div>
+<form method="get" action="https://www.youtube.com/search">
+<div class="search-box">
+	<input type="search" name="q" required="">
+	<button type="submit" class="btn btn-warning ml-2"><i class="fa fa-search"></i></button>
+</div>
+</form>
+</header>
+<div class="sidebar" id="sidebar">
+	<div style="display: flex;justify-content: space-between;align-items: center;padding: 5px;">
+		<i class="fa fa-youtube-play" style="font-size: 20px;color:#ffc107;"></i>
+		<button class="btn btn-light btn-sm" onclick="closeSideBar()">&times;</button>
+	</div>
+	<ul>
+		<li class="active"><i class="fa fa-home"></i><a href="#">Home</a></li>
+		<li><i class="fa fa-fire"></i><a href="#">Trending</a></li>
+		<li><i class="fa fa-history"></i><a href="#">History</a></li>
+		<li><i class="fa fa-gear"></i><a href="#">Setting</a></li>
+	</ul>
+</div>
+<div class="container">
+	<div class="row row-main">
+		<div class="row-sm col-lg">
+			<div class="img1">
+				<h1 class="display-4" style="font-size: 30px;">Google</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+		<div class="row-sm col-lg">
+					<div class="img2">
+				<h1 class="display-4" style="font-size: 30px;">Instagram</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+		<div class="row-sm col-lg">
+				<div class="img3">
+				<h1 class="display-4" style="font-size: 30px;">Facebook</h1>
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<h1 class="display-4" style="color: #d9d9d9;font-size: 28px;">VideoShare</h1>
+	<p style="color: #fff;">VideoShare is the most used website of 2019</p>
+	<div class="icon-pack" style="color: #fff;">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-twitter"></i>
+	</div>
+</footer>
+<script type="text/javascript">
+	function openSideBar(){
+		var sidebar=document.getElementById('sidebar');
+		sidebar.style.left='0px';
+
+	}
+		function closeSideBar(){
+		var sidebar=document.getElementById('sidebar');
+		sidebar.style.left='-400px';
+
+	}
+</script>
+</body>
+</html>
